@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column; 
+    
+    background-image:url("https://t4.ftcdn.net/jpg/05/72/98/95/360_F_572989529_bOkvyjQcw3yMNj6JrcU9zsYp0KDfOGNr.jpg");
+    background-size: cover;
+    background-position: center center; 
+}
+.prayers{
+    margin-top: 12vh;
+    min-width: 75vw;
+    max-width: 90vw;
+    min-height: 75vh;
+    max-height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding :20px 0px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+.prayers *{
+    z-index: 1;
+}
+.prayers::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width:100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image:linear-gradient(180deg,var(--mainColor) 0% ,var(--secondColor) 70%) 
+}
+.prayers .Time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 30%;
+}
+.prayers .Time .logo img{
+    height: 50px;
+} 
+.prayers .Time p{
+    color: #fff;
+    opacity: 0.6;
+}
+.prayers .Time p{
+    color: #fff;
+    opacity: 0.6;
+}
+.prayer-times {
+display: flex;
+justify-content: center;
+
+height: 70%;
+
+}
+.prayer-times ul{
+padding: 0px;
+list-style-type:none;
+
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+}
+.prayer-times ul li{
+border-bottom: 1px solid var(--white1);
+padding: 10px;
+}
+.prayer-times ul li:last-child{
+
+border-bottom: none;
+}
+.prayer-times .times li{
+padding-left: 20px; 
+}
+
